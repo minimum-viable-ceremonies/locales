@@ -1,12 +1,11 @@
-const locales = require('i18next')
-const { initReactI18next } = require('react-i18next')
+import locales from 'i18next'
+import { initReactI18next } from 'react-i18next'
 
-module.exports = file =>
+export default file => {
   locales
     .use(initReactI18next)
     .init({
       fallbackLng: 'en',
-      languages: ['en'],
       resources: {
         en: { translations: require(`../locales/${file}/en.yml`) }
       },
@@ -16,3 +15,5 @@ module.exports = file =>
       interpolation: { escapeValue: false },
       react: { wait: true }
     })
+  locales.languages = ['en']
+}
