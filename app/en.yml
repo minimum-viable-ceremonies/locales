@@ -421,6 +421,9 @@ roles:
     sub-heading: Contribute your ideas
     description: |
       As a participant, you don't have any special facilitation role to play. So simply show up, and ensure that you're engaged and willing to share your opinions with the team.
+  addRole:
+    name: Add new role
+    icon: '➕'
 setup:
   ceremony:
     create: ➕ Add custom
@@ -461,8 +464,6 @@ setup:
     helptext: Talk through the ceremonies, and add them to a cadence. Ceremonies you don't want go into The Void. First we need to set you pick your role in the team.
     displayName: What's your name?
     displayNamePlaceholder: Type your name here...
-    role: Pick a role
-    roleHelpText: What do you bring to the table? Select one or many.
     showRole: Hover over roles to preview
     ready: You're all set up! Here's what you need to know 🥳
     ceremonyHelptext: Move ceremonies to a cadence or sprint
